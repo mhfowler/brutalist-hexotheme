@@ -1,0 +1,5 @@
+<div class="sidebar-links-wrapper">
+       <% site.posts.each(function(item){ %>
+            <a href="<%- config.root %><%- item.path %>" class="navlink"><%- item.title %></a>
+       <% }); %>
+</div>

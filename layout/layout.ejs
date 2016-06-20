@@ -1,0 +1,31 @@
+<html>
+
+<!-- Head tag -->
+<%- partial('_partial/head') %>
+
+<body>
+<!-- Menu -->
+<%- partial('_partial/menu') %>
+
+<div class="page-wrapper">
+    <!-- Blog Header: title and subtitle -->
+    <%- partial('_partial/header') %>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <%- partial('_partial/sidebar') %>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-section">
+        <%- body %>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<%- partial('_partial/footer') %>
+
+</body>
+
+</html>
