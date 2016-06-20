@@ -45,3 +45,13 @@ body {
 .blog-post-title {
     margin-top: 0px;
 }
+
+img {
+    width: 400px;
+    max-width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration:none;
+}
