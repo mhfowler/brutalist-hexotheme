@@ -1,5 +1,14 @@
 <div class="sidebar-links-wrapper">
-     <% site.posts.each(function(item){ %>
+     <%
+         var posts = [];
+        site.posts.each(function(item){
+            posts.push(item);
+        });
+         posts.sort(function(a, b){
+             return a.date < b.date
+         });
+   %>
+     <% for (i = 0; i < posts.length; i++) {  var item=posts[i]; %>
             <a href="<%- config.root %><%- item.path %>" class="navlink"><%- item.title %></a>
-       <% }); %>
+       <% }; %>
 </div>
